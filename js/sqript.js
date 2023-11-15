@@ -26,3 +26,13 @@ function initializeKnob(value, className) {
         }
     });
 }
+
+/*document.querySelector('.nav_hamburger').addEventListener('click', function() {
+    this.classList.toggle('active');
+});*/
+
+$(document).ready(function() {
+    $('.nav_hamburger').click(function() {
+        $('nav').toggleClass('show_menu');
+    });
+});
