@@ -365,7 +365,6 @@ nav {
 }
 
 .timeline {
-    display: grid;
     justify-content: center;
     border-collapse: collapse;
     width: 100%;
