@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/noticeForUser.css">
+    <title>Web-форма для заметок</title>
+</head>
+
+<body>
+<header>
+    <h1>Web-форма для заметок</h1>
+    <nav>
+        <ul>
+            <li><a class="home" href="index.html">Главная</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <div class="notice-description">
+            <p>Здесь вы можете делать заметки для себя (не знаю зачем, но мне нужно сделать 5-ую лабу, поэтому пользуйтесь)</p>
+        </div>
+    </section>
+    <section>
+        <form onsubmit="deleteNotice()">
+            <div class="notice-container">
+                <label for="input-theme"></label>
+                <input type="text" id="input-theme" class="notice-input" placeholder="Тема">
+                <label for="input-text"></label>
+                <input type="text" id="input-text" class="notice-input" placeholder="Текст">
+                <input type="button" value="Добавить заметку" class="add-notice" onclick="addNotice()">
+                <input type="submit" value="Удалить все заметки" class="submit-notice">
+            </div>
+        </form>
+        <ul id="notice-list" class="notice-list"></ul>
+    </section>
+</main>
+
+<script src="/js/noticeForUser.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>
